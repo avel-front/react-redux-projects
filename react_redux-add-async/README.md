@@ -28,4 +28,4 @@
 - json placeholder.
 
 
-
+![Alt-add-post](https://i.ibb.co/wQHdQCG/redux-add-async.jpg" "add post")
