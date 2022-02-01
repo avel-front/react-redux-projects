@@ -7,3 +7,4 @@
 - redux-logger,
 - redux-devtools-extension.
   
+![Alt-counter](https://i.ibb.co/GJNX2dz/counter.jpg "counter")
