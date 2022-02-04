@@ -2,4 +2,4 @@
 
 Repository contains React/Redux projects.  
 
-![Alt-React](https://hsto.org/webt/z1/bu/fm/z1bufmx1tce1wxwjm92w7wz_7lq.png "React")
+![Alt-React](https://i.ibb.co/9h1v8kv/react.jpg "React")
