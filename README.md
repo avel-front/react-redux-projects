@@ -2,4 +2,4 @@
 
 Repository contains React/Redux projects.  
 
-![Alt-React](https://i.ibb.co/9h1v8kv/react.jpg "React")
+![Alt-React](https://i.ibb.co/SRhvRmm/imgonline-com-ua-Resize-4-VCf-Wf-Tbtq-NDNVp.png "React")
