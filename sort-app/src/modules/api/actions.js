@@ -17,4 +17,5 @@ export const apiActions = {
         type: `${API_ACTIONS.FETCH_FAILURE}${endpoint.toUpperCase()}`,
         payload
     })
+
 }
