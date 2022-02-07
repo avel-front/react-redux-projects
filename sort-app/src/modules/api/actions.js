@@ -1,7 +1,7 @@
 export const API_ACTIONS = {
-    FETCH_START: 'FETCH_START',
-    FETCH_SUCCESS: 'FETCH_SUCCESS',
-    FETCH_FAILURE: 'FETCH_FAILURE',
+    FETCH_START: 'FETCH_START_',
+    FETCH_SUCCESS: 'FETCH_SUCCESS_',
+    FETCH_FAILURE: 'FETCH_FAILURE_'
 };
 
 export const apiActions = {
@@ -17,5 +17,4 @@ export const apiActions = {
         type: `${API_ACTIONS.FETCH_FAILURE}${endpoint.toUpperCase()}`,
         payload
     })
-
-}
+};

@@ -1,7 +1,6 @@
-import camelcase from 'camelcase';
-import ENDPOINTS from "./endpoints";
-import {API_ACTIONS} from "./actions";
-
+import camelCase from 'camelcase';
+import ENDPOINTS from 'modules/api/endpoints';
+import { API_ACTIONS } from './actions';
 
 function initApiState() {
     return Object.keys(ENDPOINTS).reduce((acc, next) => {
@@ -11,18 +10,17 @@ function initApiState() {
             error: null
         };
 
-        acc[camelcase(next)] = inner;
+        acc[camelCase(next)] = inner;
+
         return acc;
-    }, {})
+    }, {});
 }
 
-const INITIAL_STATE = initApiState()
+const INITIAL_STATE = initApiState();
 
-// Обработка actions
 const apiReducer = (state = INITIAL_STATE, action) => {
     if (action.type.startsWith(API_ACTIONS.FETCH_START)) {
-        // убираем название endpoint
-        const inner = camelcase(action.type.replace(API_ACTIONS.FETCH_START, ''))
+        const inner = camelCase(action.type.replace(API_ACTIONS.FETCH_START, ''));
 
         return {
             ...state,
@@ -35,8 +33,7 @@ const apiReducer = (state = INITIAL_STATE, action) => {
     }
 
     if (action.type.startsWith(API_ACTIONS.FETCH_SUCCESS)) {
-        // убираем название endpoint
-        const inner = camelcase(action.type.replace(API_ACTIONS.FETCH_SUCCESS, ''))
+        const inner = camelCase(action.type.replace(API_ACTIONS.FETCH_SUCCESS, ''));
 
         return {
             ...state,
@@ -50,8 +47,7 @@ const apiReducer = (state = INITIAL_STATE, action) => {
     }
 
     if (action.type.startsWith(API_ACTIONS.FETCH_FAILURE)) {
-        // убираем название endpoint
-        const inner = camelcase(action.type.replace(API_ACTIONS.FETCH_FAILURE, ''))
+        const inner = camelCase(action.type.replace(API_ACTIONS.FETCH_FAILURE, ''));
 
         return {
             ...state,
@@ -62,8 +58,8 @@ const apiReducer = (state = INITIAL_STATE, action) => {
             }
         };
     }
-    // по Redux если ни один if не сработал, то верни state
+
     return state;
 }
 
-export default apiReducer
+export default apiReducer;

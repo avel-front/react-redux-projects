@@ -1,20 +1,15 @@
-import React, {useEffect} from "react";
-import {  JOBS  } from "../../modules/api/endpoints";
-import useFetch from "../../hooks/useFetch";
-
+import React, {useEffect} from 'react';
+import { JOBS } from 'modules/api/endpoints';
+import Navigation from 'components/common/Navigation';
+import useFetch from 'hooks/useFetch';
 
 export default function Jobs() {
-    const {response, performFetch} = useFetch(JOBS)
+    const {response, performFetch} = useFetch(JOBS);
+    const {loading, data} = response;
 
     useEffect(() => {
-        performFetch()
-    }, [performFetch])
+        performFetch();
+    }, [performFetch]);
 
-    console.log(response)
-
-    return (
-        <div>
-            Jobs Component
-        </div>
-    )
+    return <Navigation loading={loading} services={data} title={'Filter app'} />;
 }

@@ -10,8 +10,6 @@ const ENDPOINTS = {
         uri: '/employees',
         method: 'GET'
     }
-}
+};
 
 export default ENDPOINTS;
-
-// По переменным вытаскиваем значения в api.js в fetch
