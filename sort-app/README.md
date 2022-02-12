@@ -17,8 +17,8 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
 - material-ui
 
 
-### `Скриншот проекта`
+### `Скриншот`
 
-![sortApp](https://i.ibb.co/D5d2kFd/Filter-App.png")
+![sortApp](https://s10.gifyu.com/images/SortApp.gif)
 
 
