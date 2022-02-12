@@ -27,6 +27,6 @@
 - redux-saga,
 - json placeholder.
 
-___Скриншот проекта:___
+### `Скриншот`
 
-![Alt-add-post](https://i.ibb.co/wQHdQCG/redux-add-async.jpg" "add post")
+![Alt-add-post](https://s10.gifyu.com/images/React-Redux-App.gif "add post")
