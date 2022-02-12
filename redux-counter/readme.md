@@ -13,5 +13,7 @@
 - redux-thunk (async),
 - redux-logger,
 - redux-devtools-extension.
-  
-![Alt-counter](https://i.ibb.co/GJNX2dz/counter.jpg "counter")
+
+### `Скриншот`  
+
+![Alt-counter](https://s10.gifyu.com/images/Counter.gif "counter")
