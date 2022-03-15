@@ -1,5 +1,5 @@
-# React projects
+# Приложение "Крестики-нолики"
 
 Repository contains React / Redux projects.  
 
-![Alt-React](https://i.ibb.co/JtjntD7/React.jpg "React")
+![Alt-Krestiki](https://s7.gifyu.com/images/React-App.gif "Krestiki")
