@@ -1,10 +1,14 @@
 import React from 'react';
+import {Outlet} from "react-router-dom";
 
 const Expenses = () => {
     return (
-        <main>
-            <h2>Expenses</h2>
-        </main>
+        <div>
+            <nav>
+                <h2>Expenses</h2>
+            </nav>
+            <Outlet/>
+        </div>
     );
 };
 
