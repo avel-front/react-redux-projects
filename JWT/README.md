@@ -1,15 +1,15 @@
 ﻿# Регистрация, подтверждение аккаунта, авторизация, разграничение прав
 
 ## Запуск
-> Запустить сервер - cd server npm run dev
+> Запустить сервер - cd server npm run dev  
 > Запустить приложение - cd ../client npm install npm start
 
 ## Зависимости
 
-> Сервер:
+Сервер:
 > ![dep-server](https://i.ibb.co/Hx7wyYP/dep-server.jpg)
 
-> Приложение:
+ Приложение:
 > ![enter image description here](https://i.ibb.co/mDp74pm/dep-app.jpg)
 
 ## Основные технологии
@@ -128,7 +128,8 @@
 
 2.  Регистрация. POST - запрос формата JSON.
 
-Удачная регистрация.
+Удачная регистрация.  
+  
 ![goog-reg](https://i.ibb.co/XVYbkqC/goodreg.jpg)
 
 Неудачная регистрация. Пользователь уже зарегистрирован.
