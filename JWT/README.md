@@ -1,4 +1,4 @@
-# React projects
+# Регистрация, авторизация, подтверждение аккаунта, БД Mongo, Postman, TypeScript, Mobx
 
 Repository contains React / Redux projects.  
 
