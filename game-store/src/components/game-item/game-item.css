@@ -1,0 +1,43 @@
+.game-item {
+    text-decoration: none;
+    color: white;
+    width: 320px;
+    height: 300px;
+    background-color: rgb(36, 37, 41);
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* псевдокласс "все, кроме" + псевдокласс по номерам -> убрали лишние отступы */
+
+.game-item:not(:nth-child(4), :nth-child(5), :nth-child(6)) {
+    margin-bottom: 3rem;
+}
+
+.game-item__title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.game-item__genre {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game-item__details {
+    padding: 10px 20px;
+}
+
+.game-item__description {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.game-item__but {
+    margin-top: 33px;
+}
