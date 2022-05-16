@@ -1,16 +1,18 @@
 import React from 'react';
 import {Link, Outlet} from "react-router-dom";
 import {Header} from "./components/header";
-import {HomePage} from "./pages/home-page";
+import {Provider} from "react-redux";
+import {store} from "./redux";
 
 const App = () => {
     return (
-        <div className="App">
-            <Header/>
-            <HomePage/>
+     <Provider store={store}>
+         <div className="App">
+             <Header/>
 
-            <Outlet/>
-        </div>
+             <Outlet/>
+         </div>
+     </Provider>
     );
 };
 
