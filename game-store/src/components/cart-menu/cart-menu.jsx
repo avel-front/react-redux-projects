@@ -3,21 +3,24 @@ import './cart-menu.css'
 import {calcTotalPrice} from "../utils";
 import {Button} from "../button";
 import {CartItem} from "../cart-item";
+import {useSelector} from "react-redux";
 
-// меню всплывающей корзины
+// меню списка корзины
 export const CartMenu = ({ items, onClick }) => {
     return (
         <div className="cart-menu">
 
-                {/* Список покупок */}
             <div className="cart-menu__games-list">
-                { items.length > 0 ? items.map(game => <CartItem key={game.title} title={game.title} price={game.price} />) : 'Корзина пуста' }
+                {
+                    items.length > 0 ? items.map(game =>
+                    <CartItem key={game.title} title={game.title} price={game.price} />)
+                    : 'Корзина пуста'
+                }
             </div>
 
-            {/* Цена и оформить заказ, если есть покупки */}
+
             {
                 items.length > 0 ?
-
                     <div className="cart-menu__arrange">
                         <div className="cart-menu__total-price">
                             <span>Итого:</span>

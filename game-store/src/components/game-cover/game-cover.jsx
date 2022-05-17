@@ -1,6 +1,7 @@
 import React from 'react';
 import './game-cover.css'
 
+// верхняя часть карточки - картинка
 
 export const GameCover = ({ image="" }) => {
     return (

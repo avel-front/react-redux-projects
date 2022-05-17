@@ -1,21 +1,28 @@
-import React, {useState} from 'react';
+import React, {useCallback, useState} from 'react';
 import {useSelector} from "react-redux";
-import './cart-block.css'
 import {BsCart2} from 'react-icons/bs'
 import {CartMenu} from "../cart-menu";
 import {calcTotalPrice} from "../utils";
 import {ItemsCart} from "../items-cart";
+import {useNavigate} from "react-router-dom";
+import './cart-block.css'
 
 // корзина
 export const CartBlock = () => {
 
     // видимость CartMenu
     const [isCartMenuVisible, setIsCartMenuVisible] = useState(false);
-    // получить список корзины
+    // доступ к списку корзины
     const items = useSelector(state => state.cart.itemsInCart);
-    // общая цена
+    // итого
     const totalPrice = calcTotalPrice(items);
 
+    //переход на страницу оформления заказа
+    const navigate = useNavigate();
+    const handleClick = useCallback(() => {
+        setIsCartMenuVisible(false)
+        navigate(`/order`)
+    }, [navigate])
 
     return (
         <div className="cart-block">
@@ -26,7 +33,7 @@ export const CartBlock = () => {
             {/* показать цену или корзина пуста */}
             {totalPrice > 0 ? <span className="cart-block__total-price">{totalPrice} руб.</span> : 'Корзина пуста'}
             {/* содержимое корзины, если isCartMenuVisible true */}
-            { isCartMenuVisible && <CartMenu items={ items } onClick={() => null}/> }
+            { isCartMenuVisible ? <CartMenu items={ items } onClick={handleClick}/> : null }
         </div>
     );
 };

@@ -1,9 +1,8 @@
 import React from 'react';
 import './cart-item.css'
 
-export const CartItem = (
-    {title, price}
-) => {
+// одна позиция в меню корзины
+export const CartItem = ({title, price}) => {
     return (
         <div className="cart-item">
             <span>{title}</span>
@@ -11,6 +10,7 @@ export const CartItem = (
                 <span>
                     {price} руб.
                 </span>
+
             </div>
         </div>
     );
